@@ -33,6 +33,7 @@ struct ContentView: View {
                     Section(header: Text("done")) {
                         ForEach(finishedWords, id: \.self) { word in
                             Text(word)
+                                .foregroundColor(Color.black)
                         }
                         .onDelete(perform: { indexSet in
                             finishedWords.remove(atOffsets: indexSet)
@@ -45,7 +46,7 @@ struct ContentView: View {
                         finishedWords.removeAll()
                         disabled = true
                     }
-                    .listRowBackground(Color.init(red: 255 / 255, green: 153 / 255, blue: 153 / 255))
+                    .listRowBackground(Color(.systemRed))
                     .disabled(disabled)
                 }
                 .navigationTitle(rootWord)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354A2A1D285CC0FB00CEB533 /* App Icon ShoppingList.png in Resources */ = {isa = PBXBuildFile; fileRef = 354A2A1C285CC0FB00CEB533 /* App Icon ShoppingList.png */; };
 		3575C5AE285A3DA500FD9B16 /* ShoppingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575C5AD285A3DA500FD9B16 /* ShoppingListApp.swift */; };
 		3575C5B0285A3DA500FD9B16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575C5AF285A3DA500FD9B16 /* ContentView.swift */; };
 		3575C5B2285A3DA700FD9B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3575C5B1285A3DA700FD9B16 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		354A2A1C285CC0FB00CEB533 /* App Icon ShoppingList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App Icon ShoppingList.png"; path = "../../../../../Desktop/App Icon ShoppingList.png"; sourceTree = "<group>"; };
 		3575C5AA285A3DA500FD9B16 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3575C5AD285A3DA500FD9B16 /* ShoppingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListApp.swift; sourceTree = "<group>"; };
 		3575C5AF285A3DA500FD9B16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		3575C5C7285A3DA700FD9B16 /* ShoppingListUITests */ = {
 			isa = PBXGroup;
 			children = (
+				354A2A1C285CC0FB00CEB533 /* App Icon ShoppingList.png */,
 				3575C5C8285A3DA700FD9B16 /* ShoppingListUITests.swift */,
 				3575C5CA285A3DA700FD9B16 /* ShoppingListUITestsLaunchTests.swift */,
 			);
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354A2A1D285CC0FB00CEB533 /* App Icon ShoppingList.png in Resources */,
 				3575C5B5285A3DA700FD9B16 /* Preview Assets.xcassets in Resources */,
 				3575C5B2285A3DA700FD9B16 /* Assets.xcassets in Resources */,
 			);
