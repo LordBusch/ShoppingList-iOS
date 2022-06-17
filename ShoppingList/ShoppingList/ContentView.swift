@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var finishedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var number = 0
     
     var body: some View {
         NavigationView {
@@ -24,13 +25,23 @@ struct ContentView: View {
                     ForEach(usedWords, id: \.self) { word in
                         Text(word)
                     }
-                    .onDelete(perform: { indexSet in
-                        usedWords.remove(atOffsets: indexSet)
-                    })
+                    .onDelete(perform: delete)
                 }
+                
+                Section(header: Text("done")) {
+                    ForEach(finishedWords, id: \.self) { word in
+                        Text(word)
+                    }
+                    .onDelete(perform: { indexSet in
+                        finishedWords.remove(atOffsets: indexSet)
+                    })
+                    
+                }
+                .listRowBackground(Color.init(red: 153 / 255, green: 255 / 255, blue: 204 / 255))
             }
             .navigationTitle(rootWord)
             .onSubmit(addNewWord)
+            
         }
     }
     
@@ -43,6 +54,12 @@ struct ContentView: View {
         }
         
         newWord = ""
+    }
+    
+    func delete(at offsets: IndexSet) {
+        let index = offsets[offsets.startIndex]
+        finishedWords.insert(usedWords[index], at: 0)
+        usedWords.remove(at: index)
     }
 }
 
